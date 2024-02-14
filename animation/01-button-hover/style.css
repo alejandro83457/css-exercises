@@ -17,13 +17,9 @@ button {
   padding: 16px 24px;
   text-align: center;
 
-  transition-property: font-size, padding;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-  transition-delay: 0.01s;
+  transition: transform 0.5s ease-in-out;
 }
 
 button:hover {
-  font-size: 25px;
-  padding: 24px 32px;
+  transform: scale(1.2);
 }
