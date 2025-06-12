@@ -1,3 +1,7 @@
+/* * {
+  outline: 1px solid red;
+} */
+
 body {
   background: #eee;
   font-family: sans-serif;
@@ -7,25 +11,28 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  /* mine */
   padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
-  margin: 0px;
-  margin-bottom: 8px;
+  /* mine */
+  margin: 0px 0px 8px 0px;
   font-size: 16px;
   padding: 8px;
 }
 
 .content {
   background: #e3f4ff;
-  margin-bottom: 8px;
+  /* mine */
   padding: 16px 8px;
+  margin-bottom: 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+  /* mine */
   text-align: center;
   padding: 8px;
 }
@@ -34,6 +41,7 @@ button {
   background: white;
   border: 1px solid #eee;
   display: block;
-  padding: 8px 24px;
+  width: 128px;
+  height: 32px;
   margin: 0 auto;
 }
