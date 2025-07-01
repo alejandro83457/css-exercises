@@ -3,73 +3,72 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex: 1;
 }
 
 .header {
-  height: 72px;
+  max-height: 72px;
   background: darkmagenta;
   color: white;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  font-weight: 900;
+
   font-size: 32px;
+  font-weight: 900;
+  align-content: center;
   padding-left: 16px;
 }
 
+.main {
+  display: flex;
+}
+
 .footer {
-  height: 72px;
+  max-height: 72px;
   background: #eee;
   color: darkmagenta;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  text-align: center;
+  align-content: center;
 }
 
 .sidebar {
-  width: 300px;
+  min-width: 300px;
   background: royalblue;
   box-sizing: border-box;
   padding: 16px;
-  min-width: 300px;
+}
+
+.sidebar > * {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  padding: 32px;
+  gap: 32px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
-}
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-main {
-  display: flex;
-  height: 100%;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 32px;
-}
-
-.card {
-  width: 250px;
-  padding: 12px;
-}
-
-a {
-  font-size: 24px;
-  color: white;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
+  width: 300px;
+  height: 250px;
+  padding: 1rem;
 }
